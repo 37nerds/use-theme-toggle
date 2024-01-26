@@ -1,0 +1,24 @@
+{
+    "name": "npm-package-template",
+    "version": "0.0.0",
+    "description": "Template to kickstart creating a NPM Package",
+    "main": "dist/main.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc"
+    },
+    "engines": {
+        "node": ">=20.0"
+    },
+    "author": {
+        "name": "Shihab Mahamud",
+        "email": "shihab4t@gmail.com",
+        "url": "https://github.com/ryansonshine"
+    },
+    "keywords": [
+        "template",
+        "npm",
+        "package"
+    ]
+}
