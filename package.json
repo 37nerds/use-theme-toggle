@@ -1,15 +1,16 @@
 {
-    "name": "@p-nerd/use-theme-toggle",
-    "version": "0.0.0",
+    "private": false,
+    "name": "@37nerds/use-theme-toggle",
+    "version": "0.1.0",
     "description": "Simple react hook for handling theme toggle logic",
     "license": "MIT",
     "type": "module",
     "main": "dist/cjs/main.js",
     "module": "dist/esm/main.js",
-    "homepage": "https://github.com/p-nerd/use-theme-toggle",
+    "homepage": "https://github.com/37nerds/use-theme-toggle",
     "repository": {
         "type": "git",
-        "url": "https://github.com/p-nerd/use-theme-toggle"
+        "url": "https://github.com/37nerds/use-theme-toggle"
     },
     "scripts": {
         "clean": "rm -rf dist/",
