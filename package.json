@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@37nerds/use-theme-toggle",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Simple react hook for handling theme toggle logic",
     "license": "MIT",
     "type": "module",
