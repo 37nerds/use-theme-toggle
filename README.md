@@ -1,3 +1,3 @@
 # npm-package-template
 
-Template to kickstart creating a NPM Package
+Simple react hook for handling theme toggle logic

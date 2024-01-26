@@ -1,24 +1,47 @@
 {
-    "name": "npm-package-template",
+    "name": "@p-nerd/use-theme-toggle",
     "version": "0.0.0",
-    "description": "Template to kickstart creating a NPM Package",
-    "main": "dist/main.js",
+    "description": "Simple react hook for handling theme toggle logic",
     "license": "MIT",
     "type": "module",
-    "scripts": {
-        "build": "tsc"
+    "main": "dist/cjs/main.js",
+    "module": "dist/esm/main.js",
+    "homepage": "https://github.com/p-nerd/use-theme-toggle",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/p-nerd/use-theme-toggle"
     },
+    "scripts": {
+        "clean": "rm -rf dist/",
+        "format": "prettier --write src/",
+        "build": "pnpm clean && pnpm format && pnpm run build:esm && pnpm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "files": [
+        "dist"
+    ],
     "engines": {
         "node": ">=20.0"
     },
     "author": {
         "name": "Shihab Mahamud",
         "email": "shihab4t@gmail.com",
-        "url": "https://github.com/ryansonshine"
+        "url": "https://github.com/p-nerd"
     },
     "keywords": [
-        "template",
-        "npm",
-        "package"
-    ]
+        "react",
+        "theme-toggle",
+        "hook"
+    ],
+    "peerDependencies": {
+        "react": "^16.8.0 || ^17 || ^18"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.7",
+        "@types/react": "^18.2.48",
+        "prettier": "^3.2.4",
+        "react": "^18.2.0",
+        "typescript": "^5.3.3"
+    }
 }
