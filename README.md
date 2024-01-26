@@ -16,7 +16,7 @@ pnpm install @37nerds/use-theme-toggle
 import useThemeToggle from "@37nerds/use-theme-toggle";
 
 const ThemeToggle = () => {
-    const {theme, setTheme } = useThemeToggle({
+    const { theme, setTheme } = useThemeToggle({
         onLight: () => {
             document.documentElement?.classList.remove("dark");
         },
